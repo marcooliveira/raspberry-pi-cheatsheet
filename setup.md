@@ -48,3 +48,7 @@ You can change the IP address.
 You can check the status with `/usr/local/bin/noip2 -S`, start the service with `/usr/local/bin/noip2` and kill it with `/usr/local/bin/noip2 -K <pid>` (get pid from -S).
 
 If you need to recreate the default config file, run `sudo /usr/local/bin/noip2 -C`.
+
+## Node.js
+
+http://blog.rueedlinger.ch/2013/03/raspberry-pi-and-nodejs-basic-setup/
