@@ -1,6 +1,15 @@
 Raspberry Pi Setup (Raspbian)
 =============================
 
+## Installation (MacOSX procedure)
+
+1. **Find the device:** `diskutil list` without the card and then again with the card. A new `/dev/disk#` should have appeared. That's the SD card. Instead of using that exact device, use /dev/**r**disk#, which is a raw path, with less extra processing.
+2. **Unmount device:** `diskutil unmountDisk /dev/disk#`
+3. **Copy image into disk:** `sudo dd bs=1m if=<IMAGE HERE>.img of=/dev/rdisk#`
+4. **Eject device:** `sudo diskutil eject /dev/rdisk#`
+
+Have fun!
+
 ## Wifi
 
 1. Edit `/etc/network/interfaces`, and insert:
